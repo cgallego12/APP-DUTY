@@ -1,0 +1,36 @@
+{
+    "title": "datasets",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "name": {
+            "type": "string",
+            "description": "Dataset name/label"
+        },
+        "dataset_type": {
+            "type": "string",
+            "description": "sales or departures"
+        },
+        "uploaded_by": {
+            "type": "string",
+            "description": "Admin user id who uploaded"
+        },
+        "row_count": {
+            "type": "integer",
+            "description": "Number of rows"
+        },
+        "payload": {
+            "type": "string",
+            "description": "JSON stringified rows"
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "dataset_type",
+        "payload"
+    ]
+}
