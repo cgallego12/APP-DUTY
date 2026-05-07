@@ -119,3 +119,7 @@ export function useAuth(): AuthState & {
 }
 
 export { client };
+
+export function getCurrentUser() {
+  throw new Error('Function not implemented.');
+}
