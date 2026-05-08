@@ -1,0 +1,226 @@
+2026-05-07 09:32:19,690 - __main__ - INFO - === Logging system initialized ===
+2026-05-07 09:32:19,691 - __main__ - INFO - Log file: logs/app_20260507_093219.log
+2026-05-07 09:32:19,691 - __main__ - INFO - Log level: INFO
+2026-05-07 09:32:19,691 - __main__ - INFO - Timestamp: 20260507_093219
+2026-05-07 09:32:24,048 - __main__ - INFO - Included router: routers.aihub.router
+2026-05-07 09:32:24,072 - __main__ - INFO - Included router: routers.auth.router
+2026-05-07 09:32:24,136 - __main__ - INFO - Included router: routers.datasets.router
+2026-05-07 09:32:24,142 - __main__ - INFO - Included router: routers.health.router
+2026-05-07 09:32:24,165 - __main__ - INFO - Included router: routers.settings.router
+2026-05-07 09:32:24,265 - __main__ - INFO - Included router: routers.storage.router
+2026-05-07 09:32:24,274 - __main__ - INFO - Included router: routers.user.router
+2026-05-07 09:32:24,309 - __main__ - INFO - Included router: routers.user_roles.router
+2026-05-07 09:32:24,316 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-05-07 09:32:24,477 - __main__ - INFO - === Application startup initiated ===
+2026-05-07 09:32:24,477 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-05-07 09:32:24,477 - services.database - INFO - 🔧 Starting database initialization...
+2026-05-07 09:32:24,478 - core.database - INFO - Starting database initialization...
+2026-05-07 09:32:24,478 - backend.core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-05-07 09:32:24,478 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-05-07 09:32:24,480 - core.database - DEBUG - Database exists:./test.db
+2026-05-07 09:32:24,480 - core.database - INFO - Creating async database engine...
+2026-05-07 09:32:24,480 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-05-07 09:32:24,525 - core.database - INFO - Database engine created successfully
+2026-05-07 09:32:24,526 - core.database - INFO - Creating async session maker...
+2026-05-07 09:32:24,526 - core.database - INFO - Async session maker created successfully
+2026-05-07 09:32:24,526 - core.database - INFO - Database connection initialized successfully
+2026-05-07 09:32:24,526 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-05-07 09:32:24,526 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-05-07 09:32:24,526 - core.database - INFO - 🔧 Starting table creation...
+2026-05-07 09:32:24,528 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002427DA99620>
+2026-05-07 09:32:24,531 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002427DA99620> completed
+2026-05-07 09:32:24,531 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002427DA9CC70>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002427DA98860>, deterministic=True)
+2026-05-07 09:32:24,532 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002427DA9CC70>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002427DA98860>, deterministic=True) completed
+2026-05-07 09:32:24,533 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002427DA9CC70>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-05-07 09:32:24,533 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002427DA9CC70>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-05-07 09:32:24,534 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:24,534 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:24,534 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73E40>, 'PRAGMA read_uncommitted', [])
+2026-05-07 09:32:24,537 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73E40>, 'PRAGMA read_uncommitted', []) completed
+2026-05-07 09:32:24,537 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73E40>)
+2026-05-07 09:32:24,537 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73E40>) completed
+2026-05-07 09:32:24,538 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73E40>)
+2026-05-07 09:32:24,538 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73E40>) completed
+2026-05-07 09:32:24,538 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:24,539 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:24,540 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:24,540 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:24,540 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73EC0>, 'PRAGMA main.table_info("users")', ())
+2026-05-07 09:32:24,549 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73EC0>, 'PRAGMA main.table_info("users")', ()) completed
+2026-05-07 09:32:24,550 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73EC0>)
+2026-05-07 09:32:24,550 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73EC0>) completed
+2026-05-07 09:32:24,551 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73EC0>)
+2026-05-07 09:32:24,551 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73EC0>) completed
+2026-05-07 09:32:24,552 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:24,552 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:24,553 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73EC0>, 'PRAGMA main.table_info("oidc_states")', ())
+2026-05-07 09:32:24,553 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73EC0>, 'PRAGMA main.table_info("oidc_states")', ()) completed
+2026-05-07 09:32:24,553 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73EC0>)
+2026-05-07 09:32:24,554 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73EC0>) completed
+2026-05-07 09:32:24,554 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73EC0>)
+2026-05-07 09:32:24,554 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73EC0>) completed
+2026-05-07 09:32:24,555 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:24,555 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:24,556 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73EC0>, 'PRAGMA main.table_info("datasets")', ())
+2026-05-07 09:32:24,556 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73EC0>, 'PRAGMA main.table_info("datasets")', ()) completed
+2026-05-07 09:32:24,557 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73EC0>)
+2026-05-07 09:32:24,557 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73EC0>) completed
+2026-05-07 09:32:24,557 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73EC0>)
+2026-05-07 09:32:24,558 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73EC0>) completed
+2026-05-07 09:32:24,558 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:24,559 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:24,559 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73EC0>, 'PRAGMA main.table_info("user_roles")', ())
+2026-05-07 09:32:24,560 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DA73EC0>, 'PRAGMA main.table_info("user_roles")', ()) completed
+2026-05-07 09:32:24,560 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73EC0>)
+2026-05-07 09:32:24,560 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DA73EC0>) completed
+2026-05-07 09:32:24,561 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73EC0>)
+2026-05-07 09:32:24,561 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DA73EC0>) completed
+2026-05-07 09:32:24,561 - core.database - INFO - Tables initialized successfully
+2026-05-07 09:32:24,562 - core.database - DEBUG - [DB_OP] Create tables completed in 0.0353s
+2026-05-07 09:32:24,562 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:24,563 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:24,563 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:24,563 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:24,563 - services.database - INFO - 🔧 Table creation completed
+2026-05-07 09:32:24,564 - services.database - INFO - Database initialized successfully
+2026-05-07 09:32:24,564 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0869s
+2026-05-07 09:32:24,564 - services.mock_data - INFO - mock_data directory not found, skipping mock initialization
+2026-05-07 09:32:24,564 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-05-07 09:32:24,565 - services.database - INFO - 🔧 Starting database initialization...
+2026-05-07 09:32:24,565 - core.database - INFO - Starting database initialization...
+2026-05-07 09:32:24,565 - core.database - INFO - Database already initialized
+2026-05-07 09:32:24,565 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-05-07 09:32:24,565 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-05-07 09:32:24,566 - core.database - INFO - Tables already initialized
+2026-05-07 09:32:24,566 - services.database - INFO - 🔧 Table creation completed
+2026-05-07 09:32:24,566 - services.database - INFO - Database initialized successfully
+2026-05-07 09:32:24,566 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0018s
+2026-05-07 09:32:24,566 - services.auth - WARNING - Admin user ID or email not configured, skipping admin initialization
+2026-05-07 09:32:24,567 - __main__ - INFO - === Application startup completed successfully ===
+2026-05-07 09:32:39,911 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-05-07 09:32:41,400 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-07 09:32:41,401 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0007s
+2026-05-07 09:32:41,407 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:41,407 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:41,408 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DAF39C0>, 'SELECT 1', [])
+2026-05-07 09:32:41,408 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DAF39C0>, 'SELECT 1', []) completed
+2026-05-07 09:32:41,409 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DAF39C0>)
+2026-05-07 09:32:41,409 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DAF39C0>) completed
+2026-05-07 09:32:41,410 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DAF39C0>)
+2026-05-07 09:32:41,410 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DAF39C0>) completed
+2026-05-07 09:32:41,411 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:41,412 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:41,412 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DAF39C0>, 'DELETE FROM oidc_states WHERE oidc_states.expires_at < ?', ('2026-05-07 14:32:41.402293',))
+2026-05-07 09:32:41,415 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DAF39C0>, 'DELETE FROM oidc_states WHERE oidc_states.expires_at < ?', ('2026-05-07 14:32:41.402293',)) completed
+2026-05-07 09:32:41,417 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DAF39C0>)
+2026-05-07 09:32:41,418 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DAF39C0>) completed
+2026-05-07 09:32:41,420 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:41,420 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:41,421 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DAF39C0>, 'INSERT INTO oidc_states (state, nonce, code_verifier, expires_at) VALUES (?, ?, ?, ?) RETURNING id, created_at', ('ybRwUI28QLVOMOAyuOuhx6XXmzDTlF8PtXic_ZazQP8', 'EOrIa6dS9ld8DeGxbDj5PedVGIzBlCYPZmrIKlCpvWA', 'EfnLL4V6suotq6wp0Y_yMuKHK0OtS87bmYe1IkMQcdKRLCDgDzgU6KZrrVGo8jfxfSnbzhMtOB4VS_R4sGRk8iAoWK3XfyxonGgap7Ibdba_JGsEA-y71MRlPjyng7zW', '2026-05-07 14:42:41.418495'))
+2026-05-07 09:32:41,422 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002427DAF39C0>, 'INSERT INTO oidc_states (state, nonce, code_verifier, expires_at) VALUES (?, ?, ?, ?) RETURNING id, created_at', ('ybRwUI28QLVOMOAyuOuhx6XXmzDTlF8PtXic_ZazQP8', 'EOrIa6dS9ld8DeGxbDj5PedVGIzBlCYPZmrIKlCpvWA', 'EfnLL4V6suotq6wp0Y_yMuKHK0OtS87bmYe1IkMQcdKRLCDgDzgU6KZrrVGo8jfxfSnbzhMtOB4VS_R4sGRk8iAoWK3XfyxonGgap7Ibdba_JGsEA-y71MRlPjyng7zW', '2026-05-07 14:42:41.418495')) completed
+2026-05-07 09:32:41,422 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DAF39C0>)
+2026-05-07 09:32:41,423 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002427DAF39C0>) completed
+2026-05-07 09:32:41,423 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DAF39C0>)
+2026-05-07 09:32:41,423 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002427DAF39C0>) completed
+2026-05-07 09:32:41,424 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:41,436 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:41,436 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002427DA9CC70>)
+2026-05-07 09:32:41,436 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002427DA9CC70>) completed
+2026-05-07 09:32:41,437 - routers.auth - DEBUG - [get_dynamic_backend_url] mgx-external-domain=None, x-forwarded-host=None, host=localhost:8000, scheme=https, dynamic_url=https://localhost:8000
+2026-05-07 09:32:41,437 - routers.auth - INFO - [login] Starting OIDC flow with redirect_uri=https://localhost:8000/api/v1/auth/callback
+2026-05-07 09:32:41,437 - core.database - ERROR - Database session error: 'Settings' object has no attribute 'oidc_client_id'
+Traceback (most recent call last):
+  File "C:\Users\Usuario\app-Duty\app\backend\core\database.py", line 553, in get_db
+    yield session
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\routers\auth.py", line 93, in login
+    auth_url = build_authorization_url(state, nonce, code_challenge, redirect_uri=redirect_uri)
+  File "C:\Users\Usuario\app-Duty\app\backend\core\auth.py", line 240, in build_authorization_url
+    "client_id": settings.oidc_client_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\core\config.py", line 68, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+AttributeError: 'Settings' object has no attribute 'oidc_client_id'
+2026-05-07 09:32:41,489 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0884s
+2026-05-07 09:32:41,489 - core.database - ERROR - Failed to create database session: 'Settings' object has no attribute 'oidc_client_id'
+Traceback (most recent call last):
+  File "C:\Users\Usuario\app-Duty\app\backend\core\database.py", line 553, in get_db
+    yield session
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\routers\auth.py", line 93, in login
+    auth_url = build_authorization_url(state, nonce, code_challenge, redirect_uri=redirect_uri)
+  File "C:\Users\Usuario\app-Duty\app\backend\core\auth.py", line 240, in build_authorization_url
+    "client_id": settings.oidc_client_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\core\config.py", line 68, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+AttributeError: 'Settings' object has no attribute 'oidc_client_id'
+2026-05-07 09:32:41,596 - __main__ - ERROR - Exception: AttributeError: 'Settings' object has no attribute 'oidc_client_id'
+Traceback (most recent call last):
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Usuario\app-Duty\app\backend\venv\Lib\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\routers\auth.py", line 93, in login
+    auth_url = build_authorization_url(state, nonce, code_challenge, redirect_uri=redirect_uri)
+  File "C:\Users\Usuario\app-Duty\app\backend\core\auth.py", line 240, in build_authorization_url
+    "client_id": settings.oidc_client_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\app-Duty\app\backend\core\config.py", line 68, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+AttributeError: 'Settings' object has no attribute 'oidc_client_id'
+
