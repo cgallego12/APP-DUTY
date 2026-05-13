@@ -1,4 +1,4 @@
-import { client } from './auth';
+import { client } from './api';
 import type { SalesRow, DeparturesRow } from './excelParser';
 
 export interface StoredDataset {

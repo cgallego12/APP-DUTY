@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
-import { createClient } from '@metagptx/web-sdk';
+import { client } from './api';
 
-const client = createClient();
+
 
 export type UserRole = 'admin' | 'viewer' | null;
 
