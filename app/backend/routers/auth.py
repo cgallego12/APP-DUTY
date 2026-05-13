@@ -17,6 +17,7 @@ from core.auth import (
 from core.config import settings
 from core.database import get_db
 from dependencies.auth import get_current_user
+from datetime import datetime, timedelta
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from fastapi.responses import RedirectResponse
 from models.auth import User
@@ -76,6 +77,16 @@ def derive_name_from_email(email: str) -> str:
 @router.get("/login")
 async def login(request: Request, db: AsyncSession = Depends(get_db)):
     """Start OIDC login flow with PKCE."""
+    # Handle disabled OIDC for local development
+    if os.getenv("OIDC_ENABLED", "true").lower() == "false":
+        logger.info("[login] OIDC is disabled, redirecting to mock callback")
+        backend_url = get_dynamic_backend_url(request)
+        mock_token = "mock-token-for-dev"
+        expires_at = int((datetime.now() + timedelta(minutes=60)).timestamp())
+        return RedirectResponse(
+            url=f"{backend_url}/auth/callback?token={mock_token}&expires_at={expires_at}&token_type=Bearer"
+        )
+
     state = generate_state()
     nonce = generate_nonce()
     code_verifier = generate_code_verifier()

@@ -70,4 +70,13 @@ class Settings(BaseSettings):
 
 
 # Global settings instance
+from dotenv import load_dotenv
+from pathlib import Path
+
+# Load environment variables from .env file if it exists
+env_path = Path(__file__).parent.parent / ".env"
+if env_path.exists():
+    load_dotenv(env_path, override=True)
+    logger.info(f"Loaded environment variables from {env_path}")
+
 settings = Settings()
